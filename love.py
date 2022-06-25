@@ -58,8 +58,8 @@ def sendEmail(to, content):
     server = smtplib.SMTP('smtp.gmail.com', 587)
     server.ehlo()
     server.starttls()
-    server.login('mk148698@gmail.com', '9855578101')
-    server.sendmail('mk148698@gmail.com', to, content)
+    server.login('youremail@email.com', 'yourpassword')
+    server.sendmail('youremail@email.com', to, content)
     server.close()
 
 def google_classroom(query):
